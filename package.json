@@ -1,0 +1,17 @@
+{
+  "name": "pink-fairytale-portfolio",
+  "version": "1.0.0",
+  "description": "Luxury Pink Fairytale Personal Professional Portfolio Website",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "start": "npx serve . -p 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "fairytale",
+    "luxury",
+    "editorial"
+  ],
+  "author": "Aurelia Rosier",
+  "license": "MIT"
+}

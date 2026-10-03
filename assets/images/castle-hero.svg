@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <!-- Sunset Sky Gradient -->
+    <linearGradient id="skySunset" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E5BFD8"/>
+      <stop offset="30%" stop-color="#F8DDE8"/>
+      <stop offset="60%" stop-color="#F3C6D8"/>
+      <stop offset="85%" stop-color="#E9A9C3"/>
+      <stop offset="100%" stop-color="#F8EBD8"/>
+    </linearGradient>
+
+    <!-- Warm Golden Window Glow -->
+    <radialGradient id="windowGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF8E0"/>
+      <stop offset="60%" stop-color="#F5CE7B"/>
+      <stop offset="100%" stop-color="#C8973E"/>
+    </radialGradient>
+
+    <!-- Champagne Gold Gradient -->
+    <linearGradient id="goldFiligree" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E6C88A"/>
+      <stop offset="50%" stop-color="#FFF5DF"/>
+      <stop offset="100%" stop-color="#B28741"/>
+    </linearGradient>
+
+    <!-- Castle Stone Gradients -->
+    <linearGradient id="castlePinkStone" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F4D3E1"/>
+      <stop offset="50%" stop-color="#FFF0F5"/>
+      <stop offset="100%" stop-color="#ECC0D5"/>
+    </linearGradient>
+    <linearGradient id="castleSpireRoof" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7D4961"/>
+      <stop offset="50%" stop-color="#995E79"/>
+      <stop offset="100%" stop-color="#603449"/>
+    </linearGradient>
+
+    <!-- Mist Gradient -->
+    <linearGradient id="groundMist" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF7F8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#F8DDE8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFF7F8" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky Backdrop -->
+  <rect width="1600" height="900" fill="url(#skySunset)"/>
+
+  <!-- Romantic Clouds -->
+  <g fill="#FFF" opacity="0.45">
+    <ellipse cx="280" cy="180" rx="190" ry="50"/>
+    <ellipse cx="360" cy="160" rx="140" ry="45"/>
+    <ellipse cx="200" cy="190" rx="110" ry="35"/>
+
+    <ellipse cx="1320" cy="220" rx="220" ry="55"/>
+    <ellipse cx="1400" cy="200" rx="150" ry="45"/>
+    <ellipse cx="1220" cy="230" rx="130" ry="40"/>
+
+    <ellipse cx="800" cy="120" rx="300" ry="60" opacity="0.3"/>
+  </g>
+
+  <!-- Distant Mountain / Forest Silhouette -->
+  <path d="M0 650 Q300 560 600 620 T1200 610 Q1450 580 1600 660 L1600 900 L0 900 Z" fill="#D9A8BD" opacity="0.45"/>
+  <path d="M0 680 Q400 610 800 650 T1600 670 L1600 900 L0 900 Z" fill="#C58FA7" opacity="0.6"/>
+
+  <!-- ==================== CASTLE ARCHITECTURE ==================== -->
+  <g id="fairytale-castle" transform="translate(480, 180)">
+    
+    <!-- Central Grand Keep -->
+    <rect x="220" y="220" width="200" height="340" fill="url(#castlePinkStone)" stroke="url(#goldFiligree)" stroke-width="2"/>
+    <polygon points="320,80 200,220 440,220" fill="url(#castleSpireRoof)"/>
+    <!-- Grand Spire Finial -->
+    <line x1="320" y1="40" x2="320" y2="80" stroke="url(#goldFiligree)" stroke-width="4"/>
+    <polygon points="320,40 345,52 320,60" fill="url(#goldFiligree)"/>
+
+    <!-- Left Tower High -->
+    <rect x="110" y="190" width="100" height="370" fill="url(#castlePinkStone)" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+    <polygon points="160,60 95,190 225,190" fill="url(#castleSpireRoof)"/>
+    <line x1="160" y1="30" x2="160" y2="60" stroke="url(#goldFiligree)" stroke-width="3"/>
+    <circle cx="160" cy="30" r="4" fill="url(#goldFiligree)"/>
+
+    <!-- Right Tower High -->
+    <rect x="430" y="190" width="100" height="370" fill="url(#castlePinkStone)" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+    <polygon points="480,60 415,190 545,190" fill="url(#castleSpireRoof)"/>
+    <line x1="480" y1="30" x2="480" y2="60" stroke="url(#goldFiligree)" stroke-width="3"/>
+    <circle cx="480" cy="30" r="4" fill="url(#goldFiligree)"/>
+
+    <!-- Far Left Turret -->
+    <rect x="30" y="270" width="75" height="290" fill="url(#castlePinkStone)" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+    <polygon points="67,140 20,270 115,270" fill="url(#castleSpireRoof)"/>
+    <circle cx="67" cy="135" r="3.5" fill="url(#goldFiligree)"/>
+
+    <!-- Far Right Turret -->
+    <rect x="535" y="270" width="75" height="290" fill="url(#castlePinkStone)" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+    <polygon points="572,140 525,270 620,270" fill="url(#castleSpireRoof)"/>
+    <circle cx="572" cy="135" r="3.5" fill="url(#goldFiligree)"/>
+
+    <!-- Castle Battlements & Balustrades -->
+    <g fill="url(#goldFiligree)">
+      <rect x="105" y="185" width="110" height="12"/>
+      <rect x="425" y="185" width="110" height="12"/>
+      <rect x="215" y="215" width="210" height="14"/>
+      <!-- Decorative machicolations -->
+      <path d="M220 230 L225 242 L235 242 L240 230 L245 242 L255 242 L260 230 L265 242 L275 242 L280 230 L285 242 L295 242 L300 230 L305 242 L315 242 L320 230 L325 242 L335 242 L340 230 L345 242 L355 242 L360 230 L365 242 L375 242 L380 230 L385 242 L395 242 L400 230 L405 242 L415 242 L420 230" fill="none" stroke="url(#goldFiligree)" stroke-width="2"/>
+    </g>
+
+    <!-- Warm Glowing Arched Windows -->
+    <!-- Central Tower Windows -->
+    <path d="M300 280 A20 20 0 0 1 340 280 L340 330 L300 330 Z" fill="url(#windowGlow)" stroke="url(#goldFiligree)" stroke-width="2"/>
+    <line x1="320" y1="260" x2="320" y2="330" stroke="#9E7634" stroke-width="1.5"/>
+    <line x1="300" y1="295" x2="340" y2="295" stroke="#9E7634" stroke-width="1.5"/>
+
+    <path d="M295 380 A25 25 0 0 1 345 380 L345 450 L295 450 Z" fill="url(#windowGlow)" stroke="url(#goldFiligree)" stroke-width="2"/>
+    <line x1="320" y1="355" x2="320" y2="450" stroke="#9E7634" stroke-width="1.5"/>
+    <line x1="295" y1="400" x2="345" y2="400" stroke="#9E7634" stroke-width="1.5"/>
+
+    <!-- Left Tower Windows -->
+    <path d="M145 240 A15 15 0 0 1 175 240 L175 285 L145 285 Z" fill="url(#windowGlow)" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+    <path d="M145 330 A15 15 0 0 1 175 330 L175 375 L145 375 Z" fill="url(#windowGlow)" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+
+    <!-- Right Tower Windows -->
+    <path d="M465 240 A15 15 0 0 1 495 240 L495 285 L465 285 Z" fill="url(#windowGlow)" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+    <path d="M465 330 A15 15 0 0 1 495 330 L495 375 L465 375 Z" fill="url(#windowGlow)" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+
+    <!-- Grand Rose Balcony -->
+    <rect x="270" y="445" width="100" height="20" fill="url(#castlePinkStone)" stroke="url(#goldFiligree)" stroke-width="2"/>
+    <path d="M270 445 L370 445" stroke="url(#goldFiligree)" stroke-width="3"/>
+    <!-- Rose Vine Cascades on Balcony -->
+    <g fill="#E9A9C3" stroke="#A84C72" stroke-width="0.5">
+      <circle cx="280" cy="455" r="4.5"/>
+      <circle cx="290" cy="458" r="5.5"/>
+      <circle cx="305" cy="456" r="4"/>
+      <circle cx="320" cy="459" r="6"/>
+      <circle cx="335" cy="455" r="5"/>
+      <circle cx="350" cy="458" r="5.5"/>
+      <circle cx="360" cy="454" r="4"/>
+    </g>
+
+    <!-- Castle Portal Gate -->
+    <path d="M290 500 A30 30 0 0 1 350 500 L350 560 L290 560 Z" fill="#4B2738" stroke="url(#goldFiligree)" stroke-width="2.5"/>
+  </g>
+
+  <!-- ==================== ENCHANTED ROSE GARDEN FOREGROUND ==================== -->
+  <!-- Rolling Lawn -->
+  <path d="M0 680 Q450 630 850 670 T1600 660 L1600 900 L0 900 Z" fill="#884C67" opacity="0.35"/>
+  <path d="M0 720 Q500 670 1000 710 T1600 700 L1600 900 L0 900 Z" fill="#66344B" opacity="0.6"/>
+  <path d="M0 760 Q400 720 900 750 T1600 740 L1600 900 L0 900 Z" fill="#4B2234" opacity="0.9"/>
+
+  <!-- Rose Bushes & Blooms Left -->
+  <g transform="translate(60, 680)">
+    <!-- Bush Shapes -->
+    <circle cx="60" cy="80" r="70" fill="#5A283E"/>
+    <circle cx="140" cy="90" r="60" fill="#6E334D"/>
+    <circle cx="200" cy="110" r="50" fill="#522438"/>
+    <!-- Rose Blossoms -->
+    <circle cx="50" cy="50" r="10" fill="#F8DDE8" stroke="#D8B878" stroke-width="1.5"/>
+    <circle cx="80" cy="70" r="12" fill="#F3C6D8" stroke="#D8B878" stroke-width="1.5"/>
+    <circle cx="120" cy="60" r="14" fill="#E9A9C3" stroke="#D8B878" stroke-width="1.5"/>
+    <circle cx="160" cy="80" r="11" fill="#F8DDE8" stroke="#D8B878" stroke-width="1.5"/>
+    <circle cx="190" cy="100" r="9" fill="#F3C6D8" stroke="#D8B878" stroke-width="1.5"/>
+  </g>
+
+  <!-- Rose Bushes & Blooms Right -->
+  <g transform="translate(1260, 680)">
+    <circle cx="140" cy="80" r="75" fill="#5A283E"/>
+    <circle cx="70" cy="90" r="65" fill="#6E334D"/>
+    <circle cx="0" cy="110" r="55" fill="#522438"/>
+    <!-- Blossoms -->
+    <circle cx="150" cy="50" r="11" fill="#F8DDE8" stroke="#D8B878" stroke-width="1.5"/>
+    <circle cx="110" cy="65" r="13" fill="#E9A9C3" stroke="#D8B878" stroke-width="1.5"/>
+    <circle cx="70" cy="75" r="12" fill="#F3C6D8" stroke="#D8B878" stroke-width="1.5"/>
+    <circle cx="20" cy="95" r="10" fill="#F8DDE8" stroke="#D8B878" stroke-width="1.5"/>
+  </g>
+
+  <!-- Soft Sunset Ground Mist Layer -->
+  <rect y="720" width="1600" height="180" fill="url(#groundMist)"/>
+
+  <!-- Butterflies / Sparkles in Air -->
+  <g fill="url(#goldFiligree)" opacity="0.85">
+    <polygon points="340,380 348,375 352,382 344,385"/>
+    <polygon points="338,380 330,375 326,382 334,385"/>
+
+    <polygon points="1220,420 1228,415 1232,422 1224,425"/>
+    <polygon points="1218,420 1210,415 1206,422 1214,425"/>
+  </g>
+</svg>
